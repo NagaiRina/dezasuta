@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    margin: 0 atuo;
+    list-style: none;
+}
+
+.wrap {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.wrap > div {
+    width: 31.25%;
+    height: 300px;
+    background: #f00;
+    text-align: center;
+    line-height: 300px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        display: block;
+    }
+
+    .wrap > div {
+        width: auto;
+    }
+}
