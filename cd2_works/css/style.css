@@ -3,7 +3,7 @@
 .wrap {
     display: flex;
     width: 960px;
-    margin: 0 atuo;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -19,7 +19,7 @@
 .bg_wrap {
     display: flex;
     width: 960px;
-    margin: 0 atuo;
+    margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;

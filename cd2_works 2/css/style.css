@@ -44,43 +44,38 @@ img {
 /* header */
 
 header {
-    width: 960px;
+    max-width: 960px;
     margin: 20px auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .gl_nav {
     font-size: 14px;
     display: flex;
-    width: 800px;
     align-items: center;
     height: 30px;
-    justify-content: flex-end;
 }
 
 .nav_list {
     padding: 0 26px;
     line-height: 24px;
+    border-right: solid 1px;
 }
 
 .nav_list:nth-child(5) {
     padding-right: 0px;
-}
-
-.nav_list:nth-child(-n + 4) {
-    border-right: solid 1px;
+    border-right: none;
 }
 
 @media screen and (max-width: 767px) {
     header {
         display: block;
         margin-left: 2%;
-        width: 100%;
     }
 
     .gl_nav {
         display: block;
-        width: 98%;
         font-size: 12px;
     }
 
