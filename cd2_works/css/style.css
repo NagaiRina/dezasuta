@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.wrap {
+    display: flex;
+    width: 960px;
+    margin: 0 atuo;
+    justify-content: space-between;
+}
+
+.wrap div {
+    background-color: blue;
+    line-height: 300px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bg_wrap {
+    display: flex;
+    width: 960px;
+    margin: 0 atuo;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.bg_wrap div {
+    background-color: red;
+    line-height: 300px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
