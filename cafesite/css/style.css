@@ -131,7 +131,6 @@ body {
 
 .section_title {
     height: 78px;
-    max-width: 100%;
     display: block;
     margin: auto;
 }
@@ -139,6 +138,14 @@ body {
 .section_title_left {
     height: 78px;
     max-width: 100%;
+}
+
+.about,
+.menu,
+.event,
+footer {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* トップのキャッチフレーズ */
@@ -165,6 +172,7 @@ body {
 
 .about {
     display: flex;
+    align-items: center;
 }
 
 .about_img {
@@ -176,7 +184,7 @@ body {
 .about_us {
     max-width: 40%;
     margin-left: 10%;
-    margin-top: 50px;
+    align-items: center;
 }
 
 .about_us h2 {
@@ -228,14 +236,14 @@ body {
 
 /* ギャラリー */
 
-.garrery_slider::-webkit-scrollbar {
+.gallery_slider::-webkit-scrollbar {
     display: none;
 }
 
-.garrery_slider {
+.gallery_slider {
     position: relative;
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     /* height: auto; */
     display: flex;
     flex-wrap: nowrap;
@@ -253,8 +261,7 @@ body {
 
 .slider-card img {
     width: 100%;
-    height: auto;
-    /* object-fit: cover; */
+    /* height: auto; */
 }
 
 .slick-arrow {
@@ -277,7 +284,7 @@ body {
     opacity: 0.7;
 }
 
-/* 共通設定 */
+/* ギャラリースライダー矢印 */
 
 .slick-next::before,
 .slick-next::after,
@@ -298,7 +305,7 @@ body {
     border-right: 5px solid #fff;
 }
 
-/* next */
+/* ギャラリースライダーnext */
 
 .slick-next {
     right: 26px;
@@ -308,7 +315,7 @@ body {
     transform: rotate(45deg);
 }
 
-/* prev */
+/* ギャラリースライダーprev */
 
 .slick-prev {
     left: 26px;
@@ -322,7 +329,6 @@ body {
 
 .event_list {
     border: solid 3.6px;
-    height: 200px;
     background-color: #ffff;
     margin-top: 30px;
     box-sizing: border-box;
@@ -346,17 +352,11 @@ body {
 /* アクセス */
 
 .access_map {
-    position: relative;
-    padding-bottom: 25%;
-    height: 0;
-    overflow: hidden;
+    height: 471px;
     margin-top: 30px;
 }
 
 .access_map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -377,10 +377,10 @@ footer .section_title {
     height: 50px;
 }
 
-.footer_text {
+.footer_text p {
     padding: 2px 0 0 66px;
     font-size: 20px;
-    line-height: 1.95;
+    line-height: 1.95 !important;
 }
 
 .copyright {
